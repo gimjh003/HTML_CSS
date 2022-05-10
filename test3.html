@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>TEST3</title>
+        <style>
+            :root{
+                --main-color : black;
+                --default-border : 1px solid var(--main-color);
+            }
+            html, body{
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            form{
+                border: var(--default-border);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 50px;
+                width: 350px;
+                height: 300px;
+            }
+            form input{
+                height: 50px;
+                color: violet;
+            }
+            form input:focus{
+                color: violet;
+            }
+            form input::placeholder{
+                color: violet;
+            }
+            form button{
+                height: 50px;
+            }
+            form:hover{
+                background-color: var(--main-color);
+            }
+            button:active{
+                background-color: red;
+            }
+            a{
+                display:block;
+                padding: 10px 20px;
+                background-color: tomato;
+                color: wheat;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+            a:hover{
+                background-color: wheat;
+                color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="ID" />
+            <input type="password" placeholder="PASSWORD" />
+            <button type="submit">LOGIN</button>
+        </form>
+        <div>
+        <button id="btn">GO TO GOOGLE</button>
+        <script>document.getElementById("btn").onclick = function () {window.open("https://www.google.com")}</script>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=971306432903397436&permissions=8&scope=bot">INVITE DISCORD BOT</a>
+        </div>
+    </body>
+</html>
