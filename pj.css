@@ -55,11 +55,18 @@ main{
 }
 .inv-bot{
     margin: 40px 0px 20px 0px;
-    padding: 15px 30px;
+    padding: 15px 60px;
     border-radius: 50px;
     font-size: 25px;
     color: var(--discord-white);
     background-color: var(--discord-blue);
+    transition: border-radius 0.7s ease-out, color 0.5s ease-in, background-color 0.6s ease-out, border 0.5s ease;
+}
+.inv-bot:hover{
+    border-radius: 0;
+    color: var(--discord-blue);
+    background-color: var(--discord-black2);
+    border: 1px solid var(--discord-blue);
 }
 footer{
     display: flex;
