@@ -17,7 +17,7 @@ body{
     background-color: var(--discord-black);
 }
 header{
-    background-color: azure;
+    background-color: var(--discord-black);
     margin-bottom: 50px;
 }
 nav{
@@ -31,10 +31,6 @@ nav{
 .title{
     font-size: 30px;
     color: var(--discord-white);
-}
-nav h1{
-    color: var(--discord-white);
-    font-size: 50px;
 }
 .user{
     display: flex;
