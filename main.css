@@ -7,6 +7,9 @@
 *{
     margin: 0;
 }
+*:focus{
+    outline: 0;
+}
 a{
     text-decoration: none;
 }
@@ -25,6 +28,10 @@ nav{
     align-items: center;
     background-color: var(--discord-blue);
 }
+.title{
+    font-size: 30px;
+    color: var(--discord-white);
+}
 nav h1{
     color: var(--discord-white);
     font-size: 50px;
@@ -34,38 +41,54 @@ nav h1{
     justify-content: center;
     align-items: center;
 }
+.user-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .user-info{
     text-align: center;
     border: none;
-    background-color: var(--discord-black);
+    background: none;
     color: var(--discord-white);
-    width: 180px;
+    width: 140px;
     height: 25px;
     padding: 5px;
     font-size: 15px;
-    margin-right: 5px;
+    margin: 0px 15px;
+    border-bottom: 1px solid var(--discord-white);
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
 }
-.user-info::placeholder{
+.fas{
     color: var(--discord-white);
 }
+.user-info::placeholder,
 .user-info:focus{
     color: var(--discord-white);
 }
-.user-login input:last-child{
+.user-info:focus{
+    opacity: 1;
+}
+.user-login input:last-child,
+.user-opt a input{
     background-color: var(--discord-black2);
-    color: white;
+    color: var(--discord-blue);
     width: 90px;
     height: 35px;
     padding: 5px;
+    margin-right: 10px;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
-.user-opt a{
-    color: var(--discord-white);
-    font-size: 25px;
-    margin-left: 20px;
+.user-login input:last-child:hover,
+.user-opt a input:hover{
+    background-color: var(--discord-white);
+    color: var(--discord-blue);
 }
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .content{
     width: 400px;
@@ -74,7 +97,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 65px;
     background-color: var(--discord-black2);
     border: 1px solid var(--discord-blue);
     color: var(--discord-white);
@@ -82,6 +104,16 @@ main{
 .comment{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+.comment h1{
+    align-self: center;
+}
+.comment ul{
+    margin: 0px 30px;
+}
+.comment ul li{
+    margin-bottom: 30px;
 }
 .bd-link{
     color: var(--discord-white);
@@ -94,7 +126,7 @@ main{
     margin-bottom: 30px;
 }
 .profile img{
-    border-radius: 900px;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
     margin-bottom: 25px;
