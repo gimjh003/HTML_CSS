@@ -10,6 +10,9 @@
 body{
     background-color: var(--discord-black);
 }
+header{
+    padding: 0;
+}
 h1{
     font-size: 50px;
 }
@@ -17,9 +20,9 @@ h1{
     font-size: 80px;
 }
 nav{
-    margin: 30px;
     background-color: var(--discord-blue);
     justify-content: space-evenly;
+    margin-bottom: 0;
 }
 .nav-opt{
     color: var(--discord-black2);
@@ -32,6 +35,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid var(--discord-white)
 }
 .content{
     display: flex;
@@ -60,14 +64,13 @@ main{
 footer{
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid var(--discord-white);
 }
 footer span{
     color: var(--discord-white);
 }
 a, a:hover{
     text-decoration: none;
-}
+}   
 .content div{
     margin-bottom: 60px;
 }
