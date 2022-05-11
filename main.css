@@ -72,8 +72,8 @@ nav h1{
 }
 .user-login input:last-child,
 .user-opt a input{
-    background-color: var(--discord-black2);
-    color: var(--discord-blue);
+    background-color: var(--discord-black);
+    color: var(--discord-white);
     width: 90px;
     height: 35px;
     padding: 5px;
