@@ -21,6 +21,7 @@ h1{
 }
 nav{
     background-color: var(--discord-blue);
+    background-color: none;
     justify-content: space-evenly;
     margin-bottom: 0;
 }
@@ -60,13 +61,15 @@ main{
     font-size: 25px;
     color: var(--discord-white);
     background-color: var(--discord-blue);
-    transition: border-radius 0.7s ease-out, color 0.5s ease-in, background-color 0.6s ease-out, border 0.5s ease;
+    transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.5s ease, border 0.5s ease, box-shadow 0.7s ease;
 }
 .inv-bot:hover{
     border-radius: 0;
     color: var(--discord-blue);
     background-color: var(--discord-black2);
     border: 1px solid var(--discord-blue);
+    box-shadow: 0px 0px 20px 2px var(--discord-blue);
+    margin: 40px 0px 19px 0px;
 }
 footer{
     display: flex;
