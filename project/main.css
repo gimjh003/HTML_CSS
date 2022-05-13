@@ -12,6 +12,7 @@
 }
 a{
     text-decoration: none;
+    color: var(--discord-white);
 }
 body{
     background-color: var(--discord-black);
@@ -37,7 +38,7 @@ nav{
     background-color: var(--discord-black);
     color: var(--discord-white);
     width: 100px;
-    padding: 10px 30px;
+    padding: 10px;
     margin-right: 10px;
     border: none;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -65,6 +66,8 @@ main{
     margin-bottom: 20px;
 }
 .content .logo{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 .login,
@@ -85,7 +88,7 @@ main{
     background: none;
     color: var(--discord-white);
     width: 200px;
-    height: 40px;
+    height: 30px;
     padding: 5px;
     font-size: 15px;
     margin: 0px 15px;
@@ -104,17 +107,144 @@ main{
     opacity: 1;
 }
 .confirm{
+    align-self: center;
+    border-radius: 100px;
     margin: 20px 0px 20px 0px;
-    padding: 15px 60px;
+    width: 200px;
+    height: 50px;
+    padding: 0px 30px;
+    font-size: 15px;
+    color: var(--discord-white);
+    background-color: var(--discord-blue);
+    border: none;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.confirm:hover{
+    color: var(--discord-blue);
+    background-color: var(--discord-black2);
+    box-shadow: 0px 0px 30px 0px var(--discord-blue);
+}
+.info-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    color: var(--discord-white);
+    padding: 10px 40px;
+}
+.info{
+    background-color: var(--discord-black2);
+    width: 80vw;
+    padding: 30px;
+    border: 1px solid var(--discord-blue);
+    margin: 0 0 60px 0;
+}
+.info h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid var(--discord-blue)
+}
+.info span,
+.info ul{
+    font-size: 20px;
+}
+.comment{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--discord-black2);
+    padding: 30px;
+    border: 1px solid var(--discord-blue);
+    margin: 0 0 60px 0;
+}
+.comment h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid var(--discord-blue)
+}
+.comment span,
+.comment ul{
+    font-size: 20px;
+}
+.leave-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.leave-comment input:first-child{
+    width: 700px;
+    height: 70px;
+    text-align: center;
+    border: none;
+    background-color: var(--discord-black2);
+    color: white;
+    border-radius: 100px;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.leave-comment input:last-child{
+    width: 300px;
+    height: 70px;
+    padding: 10px 30px;
+    height: 70px;
+    border: none;
+    border-radius: 100px;
     font-size: 25px;
     color: var(--discord-white);
     background-color: var(--discord-blue);
-    transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.5s ease, border 0.5s ease, box-shadow 0.7s ease;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease, border-radius 0.5s ease, font-size 0.5s ease;
 }
-.confirm:hover{
+.leave-comment input:last-child:hover{
+    padding: 10px 30px;
+    height: 70px;
+    border: none;
+    border-radius: 100px;
+    font-size: 15px;
     border-radius: 0;
     color: var(--discord-blue);
     background-color: var(--discord-black2);
+    box-shadow: 0px 0px 0px 1px var(--discord-blue);
+}
+.invite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--discord-black2);
+    width: 700px;
+    padding: 30px;
     border: 1px solid var(--discord-blue);
-    box-shadow: 0px 0px 10px 1px var(--discord-blue);
+    margin: 0 0 60px 0;
+}
+.invite h1{
+    margin: 30px 0;
+}
+.bot-info{
+    align-self: flex-start;
+    margin: 0 20px 30px 20px;
+    font-size: 20px;
+}
+.bot-info ul li{
+    margin-bottom: 15px;
+}
+.invite .inv-btn{
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    color: var(--discord-white);
+    background-color: var(--discord-blue);
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.invite .inv-btn:hover{
+    border: none;
+    color: var(--discord-black2);
+    background-color: var(--discord-white);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
