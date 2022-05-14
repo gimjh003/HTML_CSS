@@ -22,7 +22,11 @@ header{
     margin-bottom: 50px;
 }
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
+    width: 97.7vw;
     height: 50px;
     justify-content: space-between;
     padding: 10px 20px;
@@ -41,7 +45,7 @@ nav{
     padding: 10px;
     margin-right: 10px;
     border: none;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: all 0.3s ease;
 }
 .user-opt a input:hover{
     background-color: var(--discord-white);
@@ -50,6 +54,7 @@ nav{
 main{
     display: flex;
     justify-content: space-evenly;
+    padding: 120px 0 0 0;
 }
 .content{
     width: 400px;
@@ -61,6 +66,11 @@ main{
     background-color: var(--discord-black2);
     border: 1px solid var(--discord-blue);
     color: var(--discord-white);
+    transition: all 0.3s ease;
+}
+.content:hover{
+    transform: scale(1.05, 1.05);
+    border-color: var(--discord-white);
 }
 .content h1{
     margin-bottom: 20px;
@@ -117,7 +127,7 @@ main{
     color: var(--discord-white);
     background-color: var(--discord-blue);
     border: none;
-    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
 .confirm:hover{
     color: var(--discord-blue);
@@ -198,7 +208,7 @@ main{
     font-size: 25px;
     color: var(--discord-white);
     background-color: var(--discord-blue);
-    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease, border-radius 0.5s ease, font-size 0.5s ease;
+    transition: all 0.5s ease;
 }
 .leave-comment input:last-child:hover{
     padding: 10px 30px;
@@ -240,7 +250,7 @@ main{
     font-size: 25px;
     color: var(--discord-white);
     background-color: var(--discord-blue);
-    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
 .invite .inv-btn:hover{
     border: none;

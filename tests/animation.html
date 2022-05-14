@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>The animation</title>
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @keyframes CoinFlip {
+                0%{
+                    transform: rotateX(0deg);
+                }
+                50%{
+                    transform: rotateX(180deg);
+                }
+                100%{
+                    transform: rotateX(360deg);
+                }
+            }
+            img{
+                animation: CoinFlip 1s ease infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="logo.png" />
+    </body>
+</html>

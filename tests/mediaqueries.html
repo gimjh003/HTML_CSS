@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Media Queries</title>
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+            .print{
+                display: none;
+            }
+            @media screen and (min-width: 600px) and (max-width: 750px) and (orientation: landscape){
+                div{
+                    background-color: tomato;
+                }
+            }
+            span{
+                font-size: 30px;
+            }
+            @media screen and (orientation: landscape){
+                .portrait-check{
+                    display: none;
+                }
+            }
+            @media print{
+                .print{
+                    display: inline;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span class="portrait-check">please flip your phone</span>
+        <span class="print">print mode enabled</span>
+    </body>
+</html>
