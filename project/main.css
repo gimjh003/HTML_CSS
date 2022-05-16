@@ -29,13 +29,24 @@ nav{
     top: 0;
     left: 0;
     display: flex;
-    width: 97.7vw;
-    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
     background-color: var(--discord-blue);
     margin-bottom: 50px;
+}
+.user-opt{
+    display:flex;
+    align-items: center;
+}
+.user-opt span{
+    display: block;
+    text-align: center;
+    width: 220px;
+    color: white;
 }
 .title{
     font-size: 30px;
