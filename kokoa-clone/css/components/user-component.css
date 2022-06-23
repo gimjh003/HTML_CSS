@@ -33,6 +33,10 @@
     font-size: 17px;
     color: var(--default-text-color);
 }
+.user-component__subtitle i{
+    color: tomato;
+    opacity: 0.6;
+}
 .user-component__column:last-child{
     display: flex;
     flex-direction: column;
