@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgba(0,0,0,0.8)
+}
+
+#clock{
+    font-size: 100px;
+    color: tomato;
+    cursor: default;
+    transition: all 0.5s ease;
+}
+
+#clock:hover{
+    text-shadow:0 0 33px black;
+}
